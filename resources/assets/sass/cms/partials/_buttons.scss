@@ -1,0 +1,32 @@
+.button, a.button {
+	background: $utsmokey;
+	padding: 0.6em 1em 0.65em;
+	border: 0;
+	color: #fff;
+	&:hover {
+		color: #fff;
+	}
+	&.add {
+		background: $green;
+	}
+	&.delete {
+		background: $red;
+	}
+}
+a.deleteText {
+	display: block;
+	float: left;
+	padding-top: 0.5em;
+	color: $red;
+	font-size: 0.9em;
+}
+
+.reorderIcon {
+	padding-right: 0.8em;
+	&:before {
+		color: $utrock;
+		font-family: $fontAwesome;
+		content: $fa-var-bars;
+		cursor: move;
+	}
+}

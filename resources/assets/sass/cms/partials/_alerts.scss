@@ -1,0 +1,22 @@
+.alert {
+	position: relative;
+	padding: 1em;
+	background:$lightGrey;
+	font-family: $serif;
+	pointer-events: none;
+	&.denied {
+		color: $red;
+	}
+	&.approved {
+		color: $green;
+	}
+	&:before {
+		position: absolute;
+		top: 2px;
+		right: 5px;
+		font-family: $fontAwesome;
+		content: $fa-var-close;
+		cursor: pointer;
+		pointer-events: all;
+	}
+}

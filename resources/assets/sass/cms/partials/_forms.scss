@@ -1,0 +1,63 @@
+// Default Form Styles
+.titleButtons {
+	@include clearfix();
+	margin-bottom: 1.5em;
+	border-bottom: 1px dotted $utrock;
+}
+.breadcrumb {
+	display: block;
+}
+.formTitle {
+	width: 80%;
+	float: left;
+	margin: 0;
+}
+.addObject {
+	width: 20%;
+	float:right;
+	text-align: right;
+}
+.formRow {
+	margin: 0 1em 1.2em 0;
+	padding: 0 0.8em 1.2em 0;
+	border-bottom: 1px solid #ddd;
+	@include clearfix();
+	label {
+		display: block;
+		margin: 0 0 0.5em;
+		font-size: 0.9em;
+		color: #666;
+		&.overrideSlugLabel {
+			display: inline;
+			font-size: 0.8em;
+			font-style: italic;
+		}
+	}
+	input {
+		width: 100%;
+		padding: 0.5em;
+		font-size: 1em;
+		&.overrideSlug {
+			width: initial;
+			margin: 0.3em 0.3em 0 0;
+		}
+		&.formRadio {
+			width: 10%;
+			float: left;
+		}
+		&.submit {
+			width: auto;
+			float: right;
+		}
+	}
+
+	// Custom form classes
+	#source, #description {
+		width: 100%;
+		font-size: 1em;
+		outline: 0;
+	}
+	.editable {
+		outline: 0;
+	}
+}

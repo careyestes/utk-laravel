@@ -1,0 +1,4 @@
+/vendor
+/node_modules
+.env
+/public/packages/ckfinder/config.php

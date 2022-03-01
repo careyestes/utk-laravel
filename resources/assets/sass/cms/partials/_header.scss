@@ -1,0 +1,39 @@
+header {
+	border-bottom: 1px solid $utrock;
+	@include clearfix();
+	h1 {
+		float: left;
+		margin: 0.2em 0 0 0.1em;
+		font-size: 2.3em;
+		font-weight: normal;
+		text-align: left;
+	}
+	.killer-logo {
+		float: left;
+		margin: 0;
+		a {
+			height: 0px !important;
+			text-indent: -9999px;
+			width: 48px;
+			display: block;
+			padding: 0 0 50px 0;
+			overflow: hidden;
+			background-position: center 5px;
+			background-size: 125px 161px;
+			-webkit-transition: all 0.25s ease-in-out;
+			-o-transition: all 0.25s ease-in-out;
+			transition: all 0.25s ease-in-out;
+		}
+	}
+
+
+	// User Section
+	.user-section {
+		display: inline-block;
+	  float: right;
+	  padding: 0.5em 1em;
+	  background: $utsmokey;
+	  color: $white;
+	  text-align: right;
+	}
+}

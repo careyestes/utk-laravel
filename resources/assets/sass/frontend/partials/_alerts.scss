@@ -1,0 +1,11 @@
+.alert {
+	padding: 1em;
+	background: #ccc;
+	font-family: $serif;
+	&.denied {
+		color: red;
+	}
+	&.approved {
+		color: green;
+	}
+}

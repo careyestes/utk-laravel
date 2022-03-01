@@ -1,0 +1,82 @@
+/*
+ * Mixin for clearfix
+ * @include clearfix;
+*/
+body {
+  margin: 0;
+  color: #4c4d4f;
+  font-family: "Helvetica", Arial, sans-serif; }
+
+body {
+  border-top: 7px solid #FF8200; }
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto; }
+
+.mainNav {
+  float: left;
+  width: 20%; }
+  .mainNav ul {
+    margin: 0;
+    padding: 0; }
+    .mainNav ul li {
+      list-style: none; }
+      .mainNav ul li a {
+        color: #4c4d4f;
+        text-decoration: none; }
+
+header.homepage {
+  position: relative; }
+  header.homepage .homepageStories img {
+    width: 100%; }
+  header.homepage .homepageStories h2 {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase; }
+  header.homepage .topNav {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    padding: 1.3em 1.5em 0.2em;
+    background: #fff; }
+    header.homepage .topNav ul {
+      margin: 0;
+      padding: 1em 0; }
+      header.homepage .topNav ul:before,
+      header.homepage .topNav ul:after {
+        content: " ";
+        /* 1 */
+        display: table;
+        /* 2 */ }
+      header.homepage .topNav ul:after {
+        clear: both; }
+      header.homepage .topNav ul li {
+        float: left;
+        padding-right: 20px;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 0.85em;
+        font-weight: bold; }
+        header.homepage .topNav ul li:last-child {
+          padding-right: 0; }
+        header.homepage .topNav ul li a {
+          color: #4c4d4f;
+          text-decoration: none; }
+
+.alert {
+  padding: 1em;
+  background: #ccc;
+  font-family: "Georgia", Times, serif; }
+  .alert.denied {
+    color: red; }
+  .alert.approved {
+    color: green; }
+
+/*# sourceMappingURL=main.css.map */

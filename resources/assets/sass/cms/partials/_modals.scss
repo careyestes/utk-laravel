@@ -1,0 +1,33 @@
+// Default styles for all modals
+.modalOverlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	.modalWindow {
+		position: absolute;
+	  left: 50%;
+	  top: 50%;
+	  transform: translate(-50%, -50%);
+	  width: 40%;
+	  padding: 1em;
+	  background: #fff;
+	  border: 2px solid $darkGrey;
+	  h2 {
+	  	margin-top: 0;
+	  }
+	  .modalClose {
+	  	position: absolute;
+	  	top: 0;
+	  	right: 0;
+	  	background: transparent;
+	  	border: 0;
+	  	font-family: $fontAwesome;
+	  	font-size: 2em;
+	  	outline: 0;
+	  }
+	}
+}

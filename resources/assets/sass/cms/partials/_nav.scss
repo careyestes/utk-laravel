@@ -1,0 +1,16 @@
+.navColumn {
+	height: 100%;
+	background: #f3f3f3;
+	border-right: 1px solid #eee;
+	font-size: 1.1em;
+	line-height: normal;
+	.navItem {
+		width: 90%;
+		padding: 1em;
+		margin: 0 auto;
+		border-bottom: 1px dotted #ddd;
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+}
